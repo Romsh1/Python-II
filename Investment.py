@@ -67,4 +67,3 @@ class Investment(Account):
         for ticker, amt in self.stockHoldings.items():
             stock_info += f"\n{ticker} - {amt} @ {self.stockList[ticker][1]}{self.stockList[ticker][0]:.2f} {self.stockList[ticker][1]}"
         return f"{base_info}{stock_info}"
-
